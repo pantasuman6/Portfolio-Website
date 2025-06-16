@@ -3,10 +3,11 @@ import profileImage from './suman-p.JPG';
 
 export default function Home() {
   return (
-    <div className="container">
+    
 
-      <h1>Welcome to my Portfolio!</h1>
+      
       <div className="home-container">
+        
         <img 
           src={profileImage} 
           alt="Suman Panta" 
@@ -16,6 +17,7 @@ export default function Home() {
         
 
         <div className="home-text">
+          <h2>Welcome to my Portfolio!</h2>
           <p>
             I'm <strong>Suman Panta</strong>, and I am a dedicated IT professional with over 5 years of experience spanning system administration,
             cloud infrastructure, technical support, and full-stack development. My background in both enterprise IT environments and academic training
@@ -33,6 +35,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </div>
+    
   );
 }
