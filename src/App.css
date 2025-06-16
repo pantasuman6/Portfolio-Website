@@ -1,38 +1,279 @@
+
+body, html, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #dfe6f0; /* Light, neutral background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+
 .App {
-  text-align: center;
+  padding: 20px;
+  min-height: 100vh; 
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* App Container */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Headings */
+h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: #2c3e50;
+  padding: 15px 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav div a {
+  color: #ecf0f1;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav div a:hover {
+  color: #1abc9c;
+}
+
+
+
+.contact-container {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.contact-container h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-links {
+  margin: 10px 0 20px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  color: #155ab6;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  padding: 10px 18px;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.about-container h3 {
+  font-size: 1.4rem;
+  color: #1abc9c;
+  margin-top: 25px;
+}
+
+.about-container ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+}
+
+.about-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.about-page h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  background-color: #f8f9fa;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #1abc9c;
+  border-radius: 8px;
+}
+
+.about-section h3 {
+  font-size: 1.4rem;
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about-section li {
+  margin-bottom: 10px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;  
+  padding: 20px;
+}
+
+
+.home-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-image {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.home-text {
+  max-width: 600px;
+}
+
+
+.projects-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.projects-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1abc9c;
+}
+
+.projects-container h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.projects-container p {
+  line-height: 1.6;
+  margin-top: 8px;
+  color: #555;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #2c3e50;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #1abc9c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
