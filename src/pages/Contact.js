@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 export default function Contact() {
+
+  const [input, setInput] = useState("");
+  
+
+function handleChange(e)  {
+
+setInput(e.target.value);
+
+}
+
+  function handleClick() {
+  
+  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if (regex.test(input)) {
+   alert("Email has been submitted");
+  }
+  else {
+    alert('Email is invalid.');
+  }
+    
+
+  }
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
@@ -11,9 +33,21 @@ export default function Contact() {
   Please feel free to reach out via any of the contact methods below to start a meaningful conversation.
 </p>
 
-      </p>
+<form>
+        <input type='email' value={input} onChange={handleChange}  placeholder='Enter your email...'></input>
+        <button onClick={handleClick}>Submit</button>
+        <br/>
+        
+      </form>
+      <br/>
 
-      <p><strong>Email:</strong> pantasuman6@gmail.com</p>
+
+      </p>
+      
+
+      <p><strong>Email:</strong> pantasuman6@gmail.com
+      
+      </p>
 
       <div className="contact-buttons">
         <a
