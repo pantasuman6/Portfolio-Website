@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import profileImage from './suman-p.JPG';
 
-export default function Home() {
-  const roles = [
+ const roles = [
     'System Administrator',
     'Cloud Engineer',
     'Full-Stack Developer',
     'DevOps Enthusiast'
   ];
+
+export default function Home() {
+ 
 
   const [currentRole, setCurrentRole] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);

@@ -14,7 +14,7 @@ setInput(e.target.value);
 
   function handleClick() {
   
-  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  const regex = (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
   if (regex.test(input)) {
    alert("Email has been submitted");
   }
