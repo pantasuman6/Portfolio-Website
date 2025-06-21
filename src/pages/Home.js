@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import profileImage from './suman-p.JPG';
 
  const roles = [
+    'Technical Engineer',
     'System Administrator',
     'Cloud Engineer',
-    'Full-Stack Developer',
+    'Front-End Software Engineer',
+    'Web Developer',
     'DevOps Enthusiast'
   ];
 
