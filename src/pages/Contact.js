@@ -1,53 +1,44 @@
 import React, { useState } from 'react';
 
-
 export default function Contact() {
-
   const [input, setInput] = useState("");
-  
 
-function handleChange(e)  {
-
-setInput(e.target.value);
-
-}
-
-  function handleClick() {
-  
-  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  if (regex.test(input)) {
-   alert("Email has been submitted");
+  function handleChange(e) {
+    setInput(e.target.value);
   }
-  else {
-    alert('Email is invalid.');
-  }
+
+  function handleClick(e) {
+    e.preventDefault(); // 
+
     
+    const regex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/;
 
+    if (regex.test(input)) {
+      alert("Email has been submitted");
+    } else {
+      alert("Email is invalid.");
+    }
   }
+
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
       <p>
-        <p>
-  I welcome the opportunity to connect regarding new professional challenges, consulting engagements, or collaborative projects. 
-  Please feel free to reach out via any of the contact methods below to start a meaningful conversation.
-</p>
+        I welcome the opportunity to connect regarding new professional challenges, consulting engagements, or collaborative projects. 
+        Please feel free to reach out via any of the contact methods below to start a meaningful conversation.
+      </p>
 
-<form>
-        <input type='email' value={input} onChange={handleChange}  placeholder='Enter your email...'></input>
+      <form>
+        <input
+          type="email"
+          value={input}
+          onChange={handleChange}
+          placeholder="Enter your email..."
+        />
         <button onClick={handleClick}>Submit</button>
-        <br/>
-        
       </form>
-      <br/>
 
-
-      </p>
-      
-
-      <p><strong>Email:</strong> pantasuman6@gmail.com
-      
-      </p>
+      <p><strong>Email:</strong> pantasuman6@gmail.com</p>
 
       <div className="contact-buttons">
         <a

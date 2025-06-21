@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import profileImage from './suman-p.JPG';
 
- const roles = [
-    'Technical Engineer',
-    'System Administrator',
-    'Cloud Engineer',
-    'Front-End Software Engineer',
-    'Web Developer',
-    'DevOps Enthusiast'
-  ];
+const roles = [
+  'Technical Engineer',
+  'System Administrator',
+  'Cloud Engineer',
+  'Front-End Software Engineer',
+  'Web Developer',
+  'DevOps Enthusiast'
+];
 
 export default function Home() {
- 
-
   const [currentRole, setCurrentRole] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -20,19 +18,19 @@ export default function Home() {
   useEffect(() => {
     if (charIndex < roles[roleIndex].length) {
       const timeout = setTimeout(() => {
-        setCurrentRole(prev => prev + roles[roleIndex][charIndex]);
-        setCharIndex(charIndex + 1);
+        setCurrentRole((prev) => prev + roles[roleIndex][charIndex]);
+        setCharIndex((prev) => prev + 1);
       }, 100);
       return () => clearTimeout(timeout);
     } else {
       const timeout = setTimeout(() => {
         setCurrentRole('');
         setCharIndex(0);
-        setRoleIndex((roleIndex + 1) % roles.length);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
       }, 2000);
       return () => clearTimeout(timeout);
     }
-  }, [charIndex, roleIndex, roles]);
+  }, [charIndex, roleIndex]); 
 
   return (
     <div className="home-container">
@@ -52,19 +50,17 @@ export default function Home() {
 
         <p>
           I'm <strong>Suman Panta</strong>, a dedicated IT professional with over 5 years of experience spanning system administration,
-          cloud infrastructure, technical support, and full-stack development...
+          cloud infrastructure, technical support, and full-stack development.
         </p>
 
         <p>
           My core competencies include cloud computing (AWS, Azure, GCP), server administration (Windows/Linux), full-stack development
-          (React.js & Node.js), and DevOps with Dockers, Kubernetes, Terraform and Ansible.
+          (React.js & Node.js), and DevOps with Docker, Kubernetes, Terraform, and Ansible.
         </p>
 
         <p>
           This portfolio serves as a comprehensive showcase of my technical skills and projects. Please explore to learn more!
         </p>
-
-        
       </div>
     </div>
   );
