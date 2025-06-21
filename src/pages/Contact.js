@@ -20,6 +20,7 @@ export default function Contact() {
     
     else if (regex.test(input)) {
       alert("Email has been submitted");
+      setInput("");
     } else {
       alert("Email is invalid.");
     }
