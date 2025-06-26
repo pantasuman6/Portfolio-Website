@@ -320,3 +320,48 @@ nav div a:hover {
 }
 
 
+/* Form Container */
+#form {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 50px;
+  background-color: #e2d9d9;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+#form input[type="text"],
+#form input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+#form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+#form button {
+  width: 50%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#form button:hover {
+  background-color: #0056b3;
+}
