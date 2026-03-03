@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import profileImage from './suman-p.JPG';
 
 const roles = [
@@ -30,7 +31,7 @@ export default function Home() {
       }, 2000);
       return () => clearTimeout(timeout);
     }
-  }, [charIndex, roleIndex]); 
+  }, [charIndex, roleIndex]);
 
   return (
     <div className="home-container">
@@ -41,7 +42,8 @@ export default function Home() {
       />
 
       <div className="home-text">
-        <h1>Welcome to my Portfolio!</h1>
+        <span className="greeting">Welcome to my portfolio</span>
+        <h1>Suman Panta</h1>
 
         <h3 className="typing-effect">
           {currentRole}
@@ -49,22 +51,20 @@ export default function Home() {
         </h3>
 
         <p>
-          I'm <strong>Suman Panta</strong>, a dedicated IT professional with over 5 years of experience spanning system administration,
-          cloud infrastructure, technical and application support, and full-stack web development.
+          A dedicated IT professional with over 5 years of experience spanning system administration,
+          cloud infrastructure, technical support, and full-stack web development.
         </p>
 
         <p>
-          My core competencies include cloud computing (AWS, Azure, GCP), server administration (Windows/Linux), full-stack web development
-          (React.js & Node.js), DevOps with Docker, Kubernetes, EC2, S3 Bucket, Terraform, and Ansible and Data Visualization and Analysis
-          using R, Python, Tableau and PowerBI.
+          Skilled in cloud computing (AWS, Azure, GCP), full-stack development
+          (React.js &amp; Node.js), DevOps tools (Docker, Kubernetes, Terraform), and data
+          visualization with Python, Tableau, and Power BI.
         </p>
 
-        <p>
-          This portfolio serves as a comprehensive showcase of my technical as well as interpersonal skills and projects. Please explore to learn more!
-        </p>
-        
-       
-
+        <div className="home-cta">
+          <Link to="/projects" className="btn-primary">View Projects</Link>
+          <Link to="/contact" className="btn-secondary">Get in Touch</Link>
+        </div>
       </div>
     </div>
   );
