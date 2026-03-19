@@ -144,10 +144,11 @@ export default function About() {
           Certifications
         </h3>
         <div className="certifications-grid">
-          <div className="cert-badge">CompTIA A+</div>
-          <div className="cert-badge">AWS Cloud Practitioner</div>
-          <div className="cert-badge">Microsoft Azure Fundamentals (AZ-900)</div>
-          <div className="cert-badge">Google IT Support Professional</div>
+          <div className="cert-badge">Claude 101 — Anthropic</div>
+          <div className="cert-badge">Hands-On AI: Claude Agent SDK — LinkedIn Learning</div>
+          <div className="cert-badge">Applied Machine Learning: Algorithms — LinkedIn Learning</div>
+          <div className="cert-badge">Machine Learning with Python: Foundations — LinkedIn Learning</div>
+          <div className="cert-badge">Generative AI Fundamentals — Databricks</div>
         </div>
       </div>
 
