@@ -5,9 +5,11 @@ export default function About() {
     <div className="about-page">
       <h2>About Me</h2>
       <p className="about-subtitle">
-        An experienced IT professional with over 5 years of hands-on experience
-        specializing in system administration, technical support, DevOps, web development,
-        and full-stack troubleshooting across cloud and on-prem environments.
+        Software Engineer and AI/ML enthusiast with a Master's degree in Information Technology.
+        I build intelligent, scalable software systems — from full-stack web applications
+        to machine learning models and cloud-native infrastructure. My work sits at the
+        intersection of software engineering, data science, and DevOps, with a focus on
+        creating robust solutions that leverage modern AI capabilities.
       </p>
 
       <div className="about-section animate-in">
@@ -15,19 +17,36 @@ export default function About() {
           <span className="section-icon">&#127891;</span>
           Education
         </h3>
-        <p>
-          <strong>University of the Cumberlands</strong>, Williamsburg, KY &mdash; <em>Expected Dec 2025</em><br />
-          Master's Program in Information Technology<br /><br />
+        <div className="education-list">
+          <div className="education-item">
+            <div className="education-header">
+              <strong>University of the Cumberlands</strong>
+              <span className="education-date">Dec 2025</span>
+            </div>
+            <em>Master of Science in Information Technology</em> — Williamsburg, KY
+            <div className="education-detail">GPA: 3.9 / 4.0 &bull; Dean's List</div>
+          </div>
 
-          <strong>Wentworth Institute of Technology</strong>, Boston, MA &mdash; <em>Dec 2021</em><br />
-          Bachelor of Science in Computer Networking<br /><br />
+          <div className="education-item">
+            <div className="education-header">
+              <strong>Wentworth Institute of Technology</strong>
+              <span className="education-date">Dec 2021</span>
+            </div>
+            <em>Bachelor of Science in Computer Networking</em> — Boston, MA
+          </div>
 
-          <strong>Quincy College</strong>, Quincy, MA &mdash; <em>May 2019</em><br />
-          Bachelor of Science in Computer Science and Networking<br /><br />
-
-          <strong>Related Courses:</strong> Databases, Web Design, Cloud Computing, Networking, Network Administration,
-          Core Java, Data Visualization, Network &amp; Computer Security, Linux Administration, Computer Architecture,
-          Web Development, Discrete Math, Web Applications, Project Management
+          <div className="education-item">
+            <div className="education-header">
+              <strong>Quincy College</strong>
+              <span className="education-date">May 2019</span>
+            </div>
+            <em>Associate in Computer Science</em> — Quincy, MA
+          </div>
+        </div>
+        <p style={{ marginTop: '16px', fontSize: '0.9rem' }}>
+          <strong>Key Coursework:</strong> Machine Learning, Data Visualization, Cloud Computing,
+          Databases &amp; SQL, Web Development, Network &amp; Computer Security, Linux Administration,
+          Core Java, Discrete Math, Project Management
         </p>
       </div>
 
@@ -36,12 +55,46 @@ export default function About() {
           <span className="section-icon">&#128188;</span>
           Professional Experience
         </h3>
-        <ul>
-          <li>Front-End Developer focused on React, JavaScript, HTML, CSS, and UI/UX design to create clean, functional, and engaging web experiences.</li>
-          <li>5+ years in IT across roles including Technical Support Engineer and System Administrator.</li>
-          <li>Experience managing servers, performing root-cause analysis, and resolving critical infrastructure issues.</li>
-          <li>Skilled in customer support and collaborating with cross-functional teams to deliver technical solutions.</li>
-        </ul>
+
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>Technical Support Engineer</strong>
+            <span className="experience-date">Oct 2022 – Present</span>
+          </div>
+          <em>Pine Street Inn</em> — Boston, MA
+          <ul>
+            <li>Administer and maintain Windows Server, Active Directory, and Microsoft 365 across 40+ locations.</li>
+            <li>Manage cloud infrastructure on Azure and AWS, including virtual machines, security groups, and IAM policies.</li>
+            <li>Automate deployments and system tasks using PowerShell, Bash scripting, and CI/CD pipelines with Docker &amp; Kubernetes.</li>
+            <li>Monitor infrastructure performance using Datadog and Grafana; resolve incidents with Jira and ServiceNow.</li>
+            <li>Provide Tier 1–3 technical support, managing 50+ daily tickets with 95%+ SLA compliance.</li>
+          </ul>
+        </div>
+
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>System Administrator</strong>
+            <span className="experience-date">Jun 2021 – Sep 2022</span>
+          </div>
+          <em>Pine Street Inn</em> — Boston, MA
+          <ul>
+            <li>Managed Windows/Linux servers, DHCP, DNS, VPN, and firewall configurations for 500+ users.</li>
+            <li>Deployed infrastructure using Terraform and Ansible for reproducible cloud environments.</li>
+            <li>Implemented monitoring with CloudWatch, Azure Monitor, and ELK Stack for proactive issue resolution.</li>
+          </ul>
+        </div>
+
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>Quality Control / Lab Tech</strong>
+            <span className="experience-date">Feb 2020 – Jun 2021</span>
+          </div>
+          <em>Eisai (G2D2 Innovation Center)</em> — Cambridge, MA
+          <ul>
+            <li>Performed data analysis using Python, R, and Excel to support pharmaceutical research workflows.</li>
+            <li>Built automated data pipelines and dashboards for quality metrics reporting.</li>
+          </ul>
+        </div>
       </div>
 
       <div className="about-section animate-in">
@@ -52,48 +105,63 @@ export default function About() {
         <div className="skills-grid">
           <div className="skill-category">
             <strong>Languages</strong>
-            <span>Java, HTML5, CSS, JavaScript, C++, Python, SQL, PL/SQL, R, Bash</span>
+            <span>Python, Java, JavaScript, C++, SQL, PL/SQL, R, Bash, HTML5, CSS3</span>
+          </div>
+          <div className="skill-category">
+            <strong>AI / ML</strong>
+            <span>scikit-learn, Naive Bayes, Random Forest, NLP, Sentiment Analysis, TF-IDF, pandas, NumPy</span>
           </div>
           <div className="skill-category">
             <strong>Web Development</strong>
-            <span>React.js, Node.js, Express.js, Postman, Tailwind CSS, Flask, Bootstrap</span>
+            <span>React.js, Node.js, Express.js, Flask, REST APIs, Tailwind CSS, Bootstrap, Firebase</span>
           </div>
           <div className="skill-category">
-            <strong>Cloud Platforms</strong>
-            <span>AWS, Microsoft Azure, Google Cloud Platform (GCP)</span>
+            <strong>Cloud &amp; DevOps</strong>
+            <span>AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Jenkins, GitLab CI/CD</span>
           </div>
           <div className="skill-category">
-            <strong>DevOps &amp; CI/CD</strong>
-            <span>Docker, Kubernetes, Terraform, Ansible, Jenkins, GitLab</span>
+            <strong>Data &amp; Visualization</strong>
+            <span>Power BI, Tableau, RStudio, MySQL, PostgreSQL, Excel</span>
+          </div>
+          <div className="skill-category">
+            <strong>Monitoring &amp; Infra</strong>
+            <span>Datadog, Grafana, CloudWatch, ELK Stack, Azure Monitor, Wireshark</span>
           </div>
           <div className="skill-category">
             <strong>Networking</strong>
-            <span>TCP/IP, DNS, VPN, SSL/TLS, OSI Model, Load Balancing, REST</span>
+            <span>TCP/IP, DNS, VPN, SSL/TLS, Active Directory, DHCP, Load Balancing, Firewalls</span>
           </div>
           <div className="skill-category">
-            <strong>Monitoring</strong>
-            <span>CloudWatch, Azure Monitor, Datadog, Grafana, ELK Stack</span>
-          </div>
-          <div className="skill-category">
-            <strong>Visualization</strong>
-            <span>Power BI, Tableau, RStudio, Excel</span>
-          </div>
-          <div className="skill-category">
-            <strong>OS &amp; Tools</strong>
-            <span>Windows, Linux, Ubuntu, CentOS, VMware, Wireshark, PowerShell</span>
+            <strong>Platforms &amp; Tools</strong>
+            <span>Linux, Windows Server, Git, GitHub, Jira, ServiceNow, VMware, PowerShell</span>
           </div>
         </div>
       </div>
 
       <div className="about-section animate-in">
         <h3>
+          <span className="section-icon">&#127942;</span>
+          Certifications
+        </h3>
+        <div className="certifications-grid">
+          <div className="cert-badge">Claude 101 — Anthropic</div>
+          <div className="cert-badge">Hands-On AI: Claude Agent SDK — LinkedIn Learning</div>
+          <div className="cert-badge">Applied Machine Learning: Algorithms — LinkedIn Learning</div>
+          <div className="cert-badge">Machine Learning with Python: Foundations — LinkedIn Learning</div>
+          <div className="cert-badge">Generative AI Fundamentals — Databricks</div>
+        </div>
+      </div>
+
+      <div className="about-section animate-in">
+        <h3>
           <span className="section-icon">&#127775;</span>
-          Hobbies &amp; Interests
+          Interests
         </h3>
         <p>
-          Outside of work, I maintain a healthy and balanced lifestyle through regular workouts and staying active.
-          I'm also an avid reader who enjoys books that expand knowledge and perspective. Traveling, exploring new cultures,
-          and building meaningful connections with people from diverse backgrounds are things that inspire personal and professional growth.
+          Beyond engineering, I stay active through fitness and outdoor pursuits.
+          I'm an avid reader drawn to technology and science, and enjoy traveling to
+          experience new cultures. Building meaningful connections and contributing
+          to open-source projects are key drivers of my personal and professional growth.
         </p>
       </div>
     </div>
