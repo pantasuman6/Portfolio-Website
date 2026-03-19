@@ -44,8 +44,9 @@ export default function Contact() {
     <div className="contact-container">
       <h2>Get in Touch</h2>
       <p>
-        Open to new professional challenges, consulting engagements, or collaborative projects.
-        Reach out via the form or any of the contact methods below.
+        Open to new software engineering opportunities, AI/ML collaborations, consulting
+        engagements, or interesting projects. Reach out via the form or any of the
+        contact methods below.
       </p>
 
       <div className="contact-layout">
@@ -86,12 +87,17 @@ export default function Contact() {
             <p>pantasuman6@gmail.com</p>
           </div>
 
+          <div className="contact-info-card">
+            <h4>Location</h4>
+            <p>Boston, MA</p>
+          </div>
+
           <div className="contact-buttons">
             <a
               href="https://www.linkedin.com/in/sumanpanta/"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-btn"
+              className="contact-btn linkedin"
             >
               Connect on LinkedIn
             </a>
@@ -99,15 +105,15 @@ export default function Contact() {
               href="https://github.com/pantasuman6"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-btn"
+              className="contact-btn github"
             >
               View GitHub Profile
             </a>
             <a
-              href="/SumanPanta-Resume-SoftwareEngineer2025.pdf"
+              href="/Suman-Panta-Resume-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-btn"
+              className="contact-btn resume"
             >
               Download Resume
             </a>
