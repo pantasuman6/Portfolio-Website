@@ -2,84 +2,60 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'GitHub Agentic Agent',
-    description: 'Agentic AI system powered by GPT-4 and LangChain that automates GitHub workflows — analyzing repos, managing issues, reviewing pull requests, and generating documentation autonomously.',
-    link: 'https://github.com/pantasuman6/GitHub-Agentic-Agent',
+    title: 'GitHub MCP Server – Enterprise AI Tool Integration',
+    description: 'Built a Model Context Protocol server that connects Claude Desktop to live GitHub repository operations. Uses token-based authentication, isolated credential configuration, least-privilege scopes, and a layered architecture with modular repository management tools.',
+    link: 'https://github.com/pantasuman6/GitHub-MCP-Server',
     linkText: 'View on GitHub',
-    tags: ['Python', 'GPT-4', 'LangChain', 'AI Agent'],
+    tags: ['Python', 'MCP SDK', 'PyGithub', 'REST APIs'],
+    date: 'Sep 2026',
+  },
+  {
+    title: 'StudyMate AI – RAG Powered Document Assistant',
+    description: 'Engineered a conversational document assistant with a modular ingestion pipeline for PDF, DOCX, TXT, and web content. Combines parsing, chunking, embeddings, ChromaDB vector indexing, semantic retrieval, and LangChain conversational memory to improve context relevance and reduce hallucinations.',
+    link: 'https://github.com/pantasuman6/StudyMate-AI-RAG',
+    linkText: 'View on GitHub',
+    tags: ['Python', 'LangChain', 'Mistral AI', 'ChromaDB', 'FastAPI'],
+    date: 'Aug 2026',
+  },
+  {
+    title: 'Car Price Prediction using Linear Regression',
+    description: 'Built an end-to-end supervised learning pipeline for used vehicle price prediction. Includes preprocessing, categorical encoding, feature engineering and selection, exploratory analysis, and evaluation on unseen data using MSE, RMSE, and R².',
+    link: 'https://github.com/pantasuman6/Car-Price-Prediction_LinearRegression',
+    linkText: 'View on GitHub',
+    tags: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Linear Regression'],
+    date: 'Jul 2026',
+  },
+  {
+    title: 'GitHub Agentic Assistant',
+    description: 'Developed an AI-powered conversational GitHub assistant with a React frontend and Node.js backend for AI-assisted repository workflows. Used Claude Code for development, debugging, and code generation, with a modular architecture designed for future GitHub API, LLM provider, and autonomous agent integrations.',
+    link: 'https://github.com/pantasuman6/github-agentic-agent',
+    linkText: 'View on GitHub',
+    tags: ['React.js', 'Node.js', 'Claude Code', 'REST APIs'],
     date: 'Feb 2026',
   },
   {
     title: 'AI for Cyber Threat Detection',
-    description: 'ML-based cybersecurity tool that classifies network traffic as normal or malicious using Random Forest and Decision Tree models, achieving 99.6% detection accuracy on the NSL-KDD dataset.',
-    link: 'https://github.com/pantasuman6/AI-Cyber-Threat-Detection',
-    linkText: 'View on GitHub',
-    tags: ['Python', 'scikit-learn', 'Random Forest', 'Cybersecurity'],
+    description: 'Co-authored a peer-reviewed research paper proposing a machine learning framework for anomaly detection in government and enterprise networks. Designed preprocessing and feature engineering pipelines and evaluated threat detection with precision, recall, and anomaly detection metrics.',
+    link: 'https://www.researchgate.net/publication/399760135_Artificial_Intelligence_for_Cyber_Threat_Detection_in_Government_and_Enterprise_Systems',
+    linkText: 'Read Research Publication',
+    tags: ['Python', 'TensorFlow', 'Scikit-learn', 'Data Engineering'],
     date: 'Jan 2026',
   },
   {
     title: 'Sentiment Analysis on Product Reviews',
-    description: 'Full-stack sentiment analysis app using React, Node.js, and a Python Naive Bayes model. Processes real-world product reviews to classify sentiment with high accuracy using scikit-learn and NLP pipelines.',
+    description: 'Designed and deployed a full-stack sentiment analysis platform with a React frontend and Node.js REST APIs. Trained and evaluated a Naive Bayes classifier using scikit-learn and CountVectorizer on real-world reviews, with API endpoints for real-time predictions.',
     link: 'https://github.com/pantasuman6/Product-Review-SentimentAnalysis-PythonML',
     linkText: 'View on GitHub',
-    tags: ['Python', 'React', 'Node.js', 'NLP', 'scikit-learn'],
-    date: 'Nov 2025',
+    tags: ['Python', 'React.js', 'Node.js', 'Naive Bayes', 'Scikit-learn'],
+    date: 'Jun 2025',
   },
   {
-    title: 'Spam Email Detector',
-    description: 'Full-stack spam classifier using React, Node.js, and a Python Naive Bayes model. Features TF-IDF vectorization and REST API integration for real-time email classification.',
+    title: 'Spam Email Detector Application',
+    description: 'Developed an end-to-end spam detection system using Naive Bayes, scikit-learn text preprocessing and feature extraction, and RESTful API integration. Connected the model to a React interface for interactive, real-time spam predictions.',
     link: 'https://github.com/pantasuman6/Spam-Email-Detector-with-ML',
     linkText: 'View on GitHub',
     tags: ['Python', 'ML', 'React', 'REST API'],
-    date: 'Oct 2025',
-  },
-  {
-    title: 'Weather App',
-    description: 'React-based weather forecasting app that fetches real-time data from a public API to display current conditions, forecasts, and location-based weather information.',
-    link: 'https://github.com/pantasuman6/weatherapp',
-    linkText: 'View on GitHub',
-    tags: ['React', 'API', 'JavaScript'],
-    date: '2024',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio built with React showcasing background, skills, and projects. Features responsive design, animated transitions, and React Router for seamless navigation.',
-    link: 'https://spanta.netlify.app/',
-    linkText: 'Visit Site',
-    tags: ['React', 'CSS3', 'Netlify'],
-    date: '2024',
-  },
-  {
-    title: 'Shopping Cart with Firebase',
-    description: 'E-commerce shopping cart integrating Firebase for real-time database management, user authentication, and order processing with a responsive UI.',
-    link: 'https://github.com/pantasuman6/Shopping-Cart-with-Firebase',
-    linkText: 'View on GitHub',
-    tags: ['React', 'Firebase', 'Auth'],
-    date: '2024',
-  },
-  {
-    title: 'Contact Form (Full-Stack)',
-    description: 'Web contact form with React.js frontend and Node.js/Express.js backend. Uses MySQL Workbench to store and retrieve form submissions with full CRUD operations.',
-    link: 'https://github.com/pantasuman6/FormSubmission',
-    linkText: 'View on GitHub',
-    tags: ['React', 'Node.js', 'MySQL', 'Express'],
-    date: '2024',
-  },
-  {
-    title: 'Todo List App',
-    description: 'Full-stack CRUD application using React and MySQL. Supports task creation, editing, deletion, and localStorage integration for offline persistence.',
-    link: 'https://github.com/pantasuman6/To-Do-App',
-    linkText: 'View on GitHub',
-    tags: ['React', 'MySQL', 'CRUD'],
-    date: '2023',
-  },
-  {
-    title: 'Restaurant Database Design',
-    description: 'Comprehensive RDBMS schema designed with Lucidchart ER diagrams. Includes advanced SQL queries for sales analytics, inventory management, and reporting.',
-    link: null,
-    linkText: null,
-    tags: ['SQL', 'Database Design', 'ER Diagrams'],
-    date: '2023',
+    date: 'May 2025',
   },
 ];
 
@@ -88,7 +64,8 @@ export default function Projects() {
     <div className="projects-container">
       <h1>Projects</h1>
       <p className="projects-subtitle">
-        A curated collection of projects spanning AI/ML, full-stack development, cloud engineering, and data systems.
+        Projects and research spanning enterprise AI tool integration, RAG, agentic workflows,
+        machine learning, cybersecurity, and full-stack applications.
       </p>
 
       <div className="projects-grid">

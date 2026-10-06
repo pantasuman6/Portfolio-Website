@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import profileImage from './suman-p.JPG';
 
 const roles = [
-  'Software Engineer',
-  'AI / ML Engineer',
-  'Full-Stack Developer',
-  'Cloud & DevOps Engineer',
-  'Data Scientist'
+  'System & AI Administrator',
+  'Enterprise AI & Governance',
+  'Identity & Access Management',
+  'Cloud & Security Operations',
+  'GenAI & Automation'
 ];
 
 export default function Home() {
@@ -53,16 +53,17 @@ export default function Home() {
         </h3>
 
         <p>
-          Software Engineer with a Master's in Information Technology and a strong
-          foundation in full-stack development, AI/ML, and cloud infrastructure.
-          Passionate about building intelligent, scalable applications that solve
-          real-world problems.
+          System and AI Administrator with 5+ years of enterprise IT experience
+          and a Master's in Information Technology. I bring together identity and
+          access management, endpoint and network operations, cloud infrastructure,
+          and cybersecurity to support secure enterprise systems.
         </p>
 
         <p>
-          Proficient in Python, Java, JavaScript, React, Node.js, and modern
-          AI/ML frameworks including scikit-learn and NLP. Experienced across
-          AWS, Azure, GCP, Docker, Kubernetes, and CI/CD pipelines.
+          I lead Microsoft 365 Copilot and Claude Enterprise administration,
+          strengthen Zero Trust security with Entra ID, Purview, Defender XDR,
+          and Intune, and automate operations with Python, PowerShell, and Microsoft
+          Graph. My projects explore RAG pipelines, MCP servers, and agentic workflows.
         </p>
 
         <div className="home-stats">
@@ -71,11 +72,11 @@ export default function Home() {
             <span className="stat-label">Years Experience</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">10+</span>
-            <span className="stat-label">Projects Built</span>
+            <span className="stat-number">7</span>
+            <span className="stat-label">Featured Projects</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">3</span>
+            <span className="stat-number">2</span>
             <span className="stat-label">Degrees Earned</span>
           </div>
         </div>

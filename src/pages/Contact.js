@@ -44,9 +44,9 @@ export default function Contact() {
     <div className="contact-container">
       <h2>Get in Touch</h2>
       <p>
-        Open to new software engineering opportunities, AI/ML collaborations, consulting
-        engagements, or interesting projects. Reach out via the form or any of the
-        contact methods below.
+        Connect about systems administration, enterprise AI governance, identity and
+        security operations, or GenAI and automation projects. Reach out via the form
+        or any of the contact methods below.
       </p>
 
       <div className="contact-layout">
@@ -84,7 +84,12 @@ export default function Contact() {
         <div className="contact-info-section">
           <div className="contact-info-card">
             <h4>Email</h4>
-            <p>pantasuman6@gmail.com</p>
+            <p><a href="mailto:Pantasuman6@gmail.com">Pantasuman6@gmail.com</a></p>
+          </div>
+
+          <div className="contact-info-card">
+            <h4>Phone</h4>
+            <p><a href="tel:+15076069035">(507) 606-9035</a></p>
           </div>
 
           <div className="contact-info-card">
